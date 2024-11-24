@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CargoBox</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="nav-bar">
+      <a href="index.html"><img class="logo" src="imagini/Logo.png" alt="Logo"></a>
+      
+        <nav>
+          <ul class="nav-list">
+              <li class="nav-link hideOnMobile"><a href="servicii/servicii.html">Servicii</a></li>
+              <li class="nav-link hideOnMobile"><a href=#>Echipă</a></li>
+              <li class="nav-link hideOnMobile"><a href=#>Blog</a></li>
+              <li class="nav-link hideOnMobile"><a href=#>Cariere</a></li>
+              <li class="nav-link hideOnMobile"><a href=#>Contact</a></li>
+              <li class="menu-button" onclick=showSideBar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="nav-link"><a href="servicii/servicii.html">Servicii</a></li>
+            <li class="nav-link"><a href=#>Echipă</a></li>
+            <li class="nav-link"><a href=#>Blog</a></li>
+            <li class="nav-link"><a href=#>Cariere</a></li>
+            <li class="nav-link"><a href=#>Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+  
+    <section class="despre-section">
+      <div class="despre-text-container">
+        <div class="despre-heading">
+          <h1>
+            Livrări <span class="text-gradient1">simple</span>,<br>
+            de la <span class="text-gradient2">ușă</span> la <span class="text-gradient2">ușă</span>.
+          </h1>
+        </div>
+      
+        <p class="despre-text">
+          <span class="text-gradient3">Fără</span> întârzieri<br>
+          și <span class="text-gradient3">fără</span> griji.<br><br>
+      
+          Mai mult decât colete,<br>
+          livăm <span class="text-gradient4">încredere</span> și<br>
+          <span class="text-gradient4">profesionalism</span>.<br><br>
+        </p>
+
+        <div class="trimite-colet">
+          <p>Ai un colet?</p> <a class="buton" href="#">Trimite-l acum!</a>
+        </div>
+        
+      </div>
+    
+      <div class="despre-grid-container">
+        <div class="despre-grid-item">
+          <img src="./imagini/colete-livrate.svg">
+          <div>
+            <span class="despre-grid-numbers text-gradient1">1.000.0000+</span><br>
+            <span class="despre-grid-desc">colete livrate anual</span>
+          </div>
+          
+        </div>
+    
+        <div class="despre-grid-item">
+          <img src="./imagini/livrari-la-timp.svg">
+          <div>
+            <span class="despre-grid-numbers text-gradient1">95%</span><br>
+            <span class="despre-grid-desc">livrări la timp</span>
+          </div>
+        </div>
+      
+        <div class="despre-grid-item">
+          <img src="./imagini/clienti-multumiti.svg">
+          <div>
+            <span class="despre-grid-numbers text-gradient1">4.000+</span><br>
+            <span class="despre-grid-desc">curieri</span>
+          </div>
+        </div>
+      
+        <div class="despre-grid-item">
+          <img src="./imagini/out-of-home.svg">
+          <div>
+            <span class="despre-grid-numbers text-gradient1">1.500+</span><br>
+            <span class="despre-grid-desc">depozite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicii-section">
+      <h2 class="servicii-titlu">Suntem aici pentru a-ți oferi<br>
+        cele mai bune <span class="text-gradient1">servicii</span> de livrare.
+      </h2>
+
+      <div class="servicii-grid-container">
+        <div class="servicii-card">
+          <div class="servicii-card-cerc"> <img src="imagini/home-delivery.svg"> </div>
+          <div class="servicii-card-content">
+            <span class="servicii-card-title">Livrare la domiciliu</span>
+            <span class="servicii-card-desc">Rapid și sigur,<br>direct la ușa ta.</span>
+            <a class="servicii-card-buton buton" href="servicii/servicii.html">Mai multe</a>
+          </div>
+        </div>
+
+        <div class="servicii-card">
+          <div class="servicii-card-cerc"> <img src="imagini/international-delivery.svg"> </div>
+          <div class="servicii-card-content">
+            <span class="servicii-card-title">Internațional</span>
+            <span class="servicii-card-desc">Transport global<br>și de încredere.</span>
+            <a class="servicii-card-buton buton" href="servicii/servicii.html">Mai multe</a>
+          </div>
+        </div>
+
+        <div class="servicii-card">
+          <div class="servicii-card-cerc"> <img src="imagini/fast-delivery.svg"> </div>
+          <div class="servicii-card-content">
+            <span class="servicii-card-title">Livrare rapidă</span>
+            <span class="servicii-card-desc">Livrare sigură,<br> în 24 de ore.</span>
+            <a class="servicii-card-buton buton" href="servicii/servicii.html">Mai multe</a>
+          </div>
+        </div>
+
+        <div class="servicii-card">
+          <div class="servicii-card-cerc"> <img src="imagini/optiuni.svg"> </div>
+          <div class="servicii-card-content">
+            <span class="servicii-card-title">Opțiuni</span>
+            <span class="servicii-card-desc">Livrări personalizate,<br>adaptate cerințelor tale.</span>
+            <a class="servicii-card-buton buton" href="servicii/servicii.html">Mai multe</a>
+          </div>
+        </div>
+      </div>    
+    </section>
+
+    <section class="reviews-section">
+      <div class="reviews-section-container">
+        <div class="reviews-section-content">
+          <span class="reviews-section-title">Recenzii <span class="text-gradient1">excelente</span> de la<br> mii de clienți mulțumiți!</span>
+          <span class="reviews-section-desc">Părerea ta contează pentru noi.</span>
+        
+
+          <div class="ratings-container">
+            <div class="rating">
+              <span class="rating-title">Recenzii</span>
+              <span class="rating-desc">3878</span>
+            </div>
+
+            <div class="rating">
+              <span class="rating-title">Experienţa de cumpărături</span>
+              <span class="rating-desc">4.5/5</span>
+            </div>
+
+            <div class="rating">
+              <span class="rating-title">Numărul de stele</span>
+              <img src="./imagini/Stele.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="buton" href="#">Mai multe</a>
+
+    </section>
+
+    <footer>
+      <span class="copyright-text">© CargoBox 2024 - Toate drepturile rezervate</span>
+
+      <div class="footer-contact">
+        <div class="footer-program">
+          <img src="./imagini/Clock.svg">
+          <span>Luni-Vineri<br>8:00-18:00</span>
+        </div>
+
+        <div class="footer-email">
+          <img src="./imagini/Email Icon.svg">
+          <span>contact@cargobox.com</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function showSideBar() {
+        const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'flex'
+      }
+
+      function hideSidebar() {
+        const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
