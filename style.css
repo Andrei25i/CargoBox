@@ -79,6 +79,10 @@ body {
   color: #BFC31E;
 }
 
+.active a {
+  color: #BFC31E;
+}
+
 .sidebar {
   opacity: 0;
   transform: translateX(100%);

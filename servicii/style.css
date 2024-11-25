@@ -79,6 +79,10 @@ body {
   color: #BFC31E;
 }
 
+.active a {
+  color: #BFC31E;
+}
+
 .sidebar {
   display: none;
 
