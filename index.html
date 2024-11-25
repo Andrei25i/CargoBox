@@ -183,12 +183,16 @@
     <script>
       function showSideBar() {
         const sideBar = document.querySelector('.sidebar')
-        sideBar.style.display = 'flex'
+        const body = document.querySelector('body')
+        body.style.overflow = 'hidden'
+        sideBar.classList.add('open')
       }
 
       function hideSidebar() {
         const sideBar = document.querySelector('.sidebar')
-        sideBar.style.display = 'none'
+        const body = document.querySelector('body')
+        body.style.overflow = 'visible'
+        sideBar.classList.remove('open')
       }
     </script>
   </body>
