@@ -240,7 +240,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 2% 0;
+  padding: 2% 2%;
 }
 
 .serviciu-chenar {
@@ -249,10 +249,10 @@
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);  
-  padding: 2%;
+  padding: 3% 4%;
 }
 
-.servicii-titlu img {
+.serviciu-titlu img {
   width: 80px;
   height: 80px;
 }
@@ -355,6 +355,14 @@
   font-weight: bold;
 }
 
+.preturi-obs {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #959899;
+  padding: 0 50px;
+}
+
 @media only screen and (min-width: 1800px) {
   .serviciu-preturi {
     padding-top: 3%;
@@ -419,6 +427,7 @@
 
   #optiuni-mobile p {
     text-align: center;
+    margin-top: 6%;
   }
 
   .serviciu-chenar {
@@ -458,7 +467,11 @@
 
   .pret {
     font-size: 25px;
-  } 
+  }
+
+  .preturi-obs {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -469,5 +482,9 @@
   .desc-container {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .preturi-obs {
+    font-size: 10px;
   }
 }
