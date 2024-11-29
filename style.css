@@ -263,9 +263,7 @@
 
 .servicii-card-buton {
   margin-top: 10px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
 
   font-size: 15px;
 }
@@ -482,8 +480,8 @@
   }
 
   .reviews-section .buton {
-    padding: 3%;
     font-size: 15px;
+    padding: 10px 20px;
     margin-top: 5%; 
   }
 }
