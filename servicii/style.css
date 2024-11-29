@@ -368,6 +368,10 @@
 }
 
 @media only screen and (max-width: 1050px) {
+  .serviciu-preturi {
+    gap: 30px;
+  }
+
   .preturi-container {
     flex-direction: column;
   }
