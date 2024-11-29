@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CargoBox - Livrare la domiciliu</title>
+
+        <link rel="stylesheet" href="../general_styles.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="nav-bar">
+            <a href="../index.html"><img class="logo" src="../imagini/Logo.png" alt="Logo"></a>
+            
+            <nav>
+                <!-- Vizibil pe desktop -->
+                <ul class="nav-list">
+                    <li class="nav-link hideOnMobile"><a href="servicii.html">Servicii</a></li>
+                    <li class="nav-link hideOnMobile"><a href=#>Echipă</a></li>
+                    <li class="nav-link hideOnMobile"><a href=#>Blog</a></li>
+                    <li class="nav-link hideOnMobile"><a href=#>Cariere</a></li>
+                    <li class="nav-link hideOnMobile"><a href=#>Contact</a></li>
+                    <li class="menu-button" onclick=showSideBar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                <!-- Vizibil pe telefon/tableta -->
+                <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="nav-link"><a href="servicii.html">Servicii</a></li>
+                <li class="nav-link"><a href=#>Echipă</a></li>
+                <li class="nav-link"><a href=#>Blog</a></li>
+                <li class="nav-link"><a href=#>Cariere</a></li>
+                <li class="nav-link"><a href=#>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="serviciu-detalii">
+            <div class="nume-serviciu-container">
+                <div class="serviciu-chenar">
+                    <div class="serviciu-titlu">
+                        <img src="../imagini/home-delivery.svg" alt="Livrare la domiciliu">
+                        <h2 class="text-gradient1">Livrare la domiciliu</h2>
+                    </div>
+    
+                    <div class="serviciu-text">
+                        <p>
+                            Serviciul nostru de livrare la domiciliu este conceput pentru
+                            a-ți aduce produsele dorite direct la ușa ta, rapid și în siguranță.
+                        </p>
+                        <p>
+                            Indiferent de destinație, suntem aici pentru a-ți oferi o experiență de livrare confortabilă și fără griji.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="desc-container">
+                <div class="serviciu-chenar">
+                    <h3 class="text-gradient1">Optiuni de livrare</h2>
+            
+                    <div class="serviciu-text" id="optiuni-desktop">
+                        <p>
+                            <strong>Livrare standard</strong><br>
+                            Coletul ajunge la destinație în termen de 24-48 de ore.
+                        </p>
+                        <p>
+                            <strong>Livrare programată</strong><br>
+                            Coletul va ajunge în data aleasă de tine.
+                        </p>
+                    </div>
+
+                    <div class="serviciu-text" id="optiuni-mobile">
+                        <p>
+                            <strong>Livrare standard</strong><br>
+                            24-48 ore
+                        </p>
+                        <p> 
+                            <strong>Livrare programată</strong><br>
+                            data aleasă de tine
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="serviciu-chenar">
+                    <h3 class="text-gradient1">Ce tipuri de colete livram?</h3>
+
+                    <div class="serviciu-text">
+                        <p>
+                            Livrăm orice tip de colet, de la documente importante și pachete mici până la colete voluminoase sau fragile.
+                        </p>
+                        <p>
+                            Oferim soluții personalizate de livrare pentru orice tip de expediere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="serviciu-preturi">
+            <div class="preturi-titlu">
+                <h2 class="text-gradient1">Prețuri</h2>
+            </div>
+
+            <div class="preturi-container">
+                <div class="pret-chenar">
+                    <img src="../imagini/Colet S.svg">
+                    <div class="pret-chenar-desc">
+                        <span class="tip-colet">Colet Mic (S)</span>
+                        <span class="marime-colet">max 3 x 37 x 60 cm</span>
+                        <span class="pret text-gradient1">10 LEI</span>
+                    </div>
+                    
+                </div>
+            
+                <div class="pret-chenar">
+                    <img src="../imagini/Colet M.svg">
+                    <div class="pret-chenar-desc">
+                        <span class="tip-colet">Colet Mediu (M)</span>
+                        <span class="marime-colet">max 10 x 37 x 60 cm</span>
+                        <span class="pret text-gradient1">15 LEI</span>
+                    </div>
+                </div>
+                
+                <div class="pret-chenar">
+                    <img src="../imagini/Colet L.svg">
+                    <div class="pret-chenar-desc">
+                        <span class="tip-colet">Colet Mare (L)</span>
+                        <span class="marime-colet">max 20 x 37 x 60 cm</span>
+                        <span class="pret text-gradient1">20 LEI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span class="copyright-text">© CargoBox 2024 - Toate drepturile rezervate</span>
+        
+            <div class="footer-contact">
+            <div class="footer-program">
+                <img src="../imagini/Clock.svg">
+                <span>Luni-Vineri<br>8:00-18:00</span>
+            </div>
+        
+            <div class="footer-email">
+                <img src="../imagini/Email Icon.svg">
+                <span>contact@cargobox.com</span>
+            </div>
+            </div>
+        </footer>
+
+        <script>
+            function showSideBar() {
+              const sideBar = document.querySelector('.sidebar')
+              const body = document.querySelector('body')
+              body.style.overflow = 'hidden'
+              sideBar.classList.add('open')
+            }
+      
+            function hideSidebar() {
+              const sideBar = document.querySelector('.sidebar')
+              const body = document.querySelector('body')
+              body.style.overflow = 'visible'
+              sideBar.classList.remove('open')
+            }
+        </script>
+    </body>
+</html>

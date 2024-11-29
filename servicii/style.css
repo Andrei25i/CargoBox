@@ -1,129 +1,11 @@
-.text-gradient1 {
-  background: linear-gradient(0deg, #BFC31E, #28A745);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text-gradient2 {
-  background: linear-gradient(0deg, #BFC93E, #7FB72E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text-gradient3 {
-  background: linear-gradient(0deg, #2FA843, #2FA843);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text-gradient4 {
-  background: linear-gradient(0deg, #94BB2A, #78B630);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-  
-  
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  background-color: #F4F4F4;  
-  padding-top: 80px;
-}
-
-
-/* Bara de navigare */
-.nav-bar {
-  width: 100%;
-  height: 80px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-left: 5%;
-  padding-right: 5%;
-
-  position: fixed;  
-  top: 0;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  z-index: 1;
-}
-
-.logo {
-  height: 50px;
-}
-
-.nav-list {
-  list-style-type: none;
-
-  display: flex;
-  gap: 5vw;
-}
-
-.nav-link a {
-  text-decoration: none;
-  color: black;
-
-  transition: color 0.3s ease-in-out 0s;
-}
-
-.menu-button {
-  display: none;
-}
-
-.nav-link a:hover {
-  color: #BFC31E;
-}
-
-.active a {
-  color: #BFC31E;
-}
-
-.sidebar {
-  display: none;
-
-  list-style-type: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 200px;
-  background-color: #ffffff;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-  gap: 5%;
-}
-
-.sidebar li {
-  padding-top: 30px;
-  padding-left: 30px;
-}
-
-@media only screen and (max-width: 990px) {
-  .hideOnMobile {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .sidebar {
-    width: 150px;
-  }
+/* Sectiunea de servicii (pagina nivel 2) */
+.serviciu-detalii {
+  padding: 4% 50px;
 }
 
 .servicii-section {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 2% 5%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,17 +62,13 @@ body {
 .grid-item-content img {
   width: 80px;
   height: 80px;
-
-  -webkit-user-drag: none;
 }
 
 .buton {
   text-decoration: none;
   color: #ffffff;
   background-color: #28A745;
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px 30px;
   width: fit-content;
   height: fit-content;
   border-radius: 100px;
@@ -309,7 +187,6 @@ body {
 
   .buton {
       font-size: 15px;
-      padding: 10px;
   }
 
   .grid-container {
@@ -354,63 +231,239 @@ body {
   }
 }
 
-footer {
-  width: 100%;
-  height: 80px;
-  background-color: #ffffff;
-  border-top: solid #959899 2px;
 
+
+/* Pagina de serviciu (nivel 3) */
+.serviciu-detalii {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
-  padding-left: 5%;
-  padding-right: 5%;
-
-  font-size: 13px;
+  gap: 20px;
+  padding: 2% 0;
 }
 
-.copyright-text {
+.serviciu-chenar {
+  max-width: 700px;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);  
+  padding: 2%;
+}
+
+.servicii-titlu img {
+  width: 80px;
+  height: 80px;
+}
+
+.serviciu-titlu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.serviciu-chenar h2 {
+  font-size: 50px;
+}
+
+.serviciu-chenar h3 {
+  font-size: 30px;
+}
+
+.serviciu-text p {
+  margin-top: 3%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.desc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#optiuni-mobile {
+  display: none;
+}
+
+.serviciu-preturi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
+  padding: 6% 0;
+}
+
+.preturi-titlu {
+  border-radius: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+
+.preturi-titlu h2 {
+  font-size: 30px;
+}
+
+.preturi-container {
+  display: flex;
+  gap: 70px;
+}
+
+.pret-chenar {
+  width: 280px;
+  height: 280px;
+  background-color: #ffffff;
+  border: solid #D9D9D9 10px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  transition: border-color 0.3s ease-in-out 0s;
+}
+
+.pret-chenar:hover {
+  border-color: #BFC31E;
+}
+
+.pret-chenar-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tip-colet {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.marime-colet {
+  font-size: 15px;
+  font-weight: 450;
   color: #959899;
 }
 
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-
-  gap: 10px;
-}
-
-.footer-program, .footer-email {
-  display: flex;
-  gap: 10px;
-  text-align: center;
-  align-items: center;
+.pret {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 1800px) {
-  footer {
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .footer-contact {
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;  
+  .serviciu-preturi {
+    padding-top: 3%;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  footer {
+@media only screen and (max-width: 1368px) {
+  .desc-container {
     flex-direction: column;
-    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .preturi-container {
+    flex-direction: column;
   }
 
-  .footer-contact {
+  .pret-chenar {
+    border-width: 7px;
+  }
+
+  .preturi-container {
+    gap: 3vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .pret-chenar {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /* Ascundere text lung si afisare text mai scurt */
+  #optiuni-desktop {
+    display: none;
+  }
+
+  #optiuni-mobile{
+    display: block;
+    min-width: 200px;
+    font-size: 15px;
+    text-align: center;
+  }  
+
+  .desc-container {
     flex-direction: row;
-    justify-content: center;
-    gap: 20px;  
+  }  
+
+  .desc-container h3{
+    text-align: center;
+  }
+
+  #optiuni-mobile strong {
+    font-size: 17px;
+  }
+
+  #optiuni-mobile p {
+    text-align: center;
+  }
+
+  .serviciu-chenar {
+    max-width: 360px;
+    border-radius: 20px;
+    padding: 5%;
+  }
+
+  .serviciu-titlu img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .serviciu-titlu {
+    gap: 15px;
+  }
+
+  .serviciu-titlu h2 {
+    font-size: 25px;
+  }
+
+  .desc-container h3 {
+    font-size: 20px;
+  }
+
+  .serviciu-text p {
+    font-size: 15px;
+  }
+
+  .tip-colet {
+    font-size: 15px;
+  }
+
+  .marime-colet {
+    font-size: 13px;
+  }
+
+  .pret {
+    font-size: 20px;
+  } 
+}
+
+@media only screen and (max-width: 620px) {
+  .serviciu-detalii {
+    padding: 4% 25px;
+  }
+  
+  .desc-container {
+    flex-direction: column;
+    gap: 20px;
   }
 }
