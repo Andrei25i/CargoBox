@@ -23,10 +23,10 @@
               <li class="nav-link hideOnMobile"><a href=#>Blog</a></li>
               <li class="nav-link hideOnMobile"><a href=#>Cariere</a></li>
               <li class="nav-link hideOnMobile"><a href=#>Contact</a></li>
-              <li class="menu-button" onclick=showSideBar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+              <li class="menu-button"><svg onclick=showSideBar() xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
           </ul>
           <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
             <li class="nav-link"><a href="servicii/servicii.html">Servicii</a></li>
             <li class="nav-link"><a href=#>Echipă</a></li>
             <li class="nav-link"><a href=#>Blog</a></li>
@@ -107,7 +107,7 @@
           <div class="servicii-card-content">
             <span class="servicii-card-title">Livrare la domiciliu</span>
             <span class="servicii-card-desc">Rapid și sigur,<br>direct la ușa ta.</span>
-            <a class="servicii-card-buton buton" href="servicii/servicii.html">Detalii</a>
+            <a class="servicii-card-buton buton" href="servicii/livrare_domiciliu.html">Detalii</a>
           </div>
         </div>
 
@@ -187,16 +187,15 @@
     </footer>
 
     <script>
+      const sideBar = document.querySelector('.sidebar')
+      const body = document.querySelector('body')
+
       function showSideBar() {
-        const sideBar = document.querySelector('.sidebar')
-        const body = document.querySelector('body')
         body.style.overflow = 'hidden'
         sideBar.classList.add('open')
       }
 
       function hideSidebar() {
-        const sideBar = document.querySelector('.sidebar')
-        const body = document.querySelector('body')
         body.style.overflow = 'visible'
         sideBar.classList.remove('open')
       }

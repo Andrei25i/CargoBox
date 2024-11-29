@@ -17,18 +17,16 @@
             <a href="../index.html"><img class="logo" src="../imagini/Logo.png" alt="Logo"></a>
             
               <nav>
-                <!-- Vizibil pe desktop -->
                 <ul class="nav-list">
                     <li class="nav-link hideOnMobile active"><a href="servicii.html">Servicii</a></li>
                     <li class="nav-link hideOnMobile"><a href=#>Echipă</a></li>
                     <li class="nav-link hideOnMobile"><a href=#>Blog</a></li>
                     <li class="nav-link hideOnMobile"><a href=#>Cariere</a></li>
                     <li class="nav-link hideOnMobile"><a href=#>Contact</a></li>
-                    <li class="menu-button" onclick=showSideBar()><a href=#><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    <li class="menu-button"><svg onclick=showSideBar() xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
                 </ul>
-                <!-- Vizibil pe telefon/tableta -->
                 <ul class="sidebar">
-                  <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                  <li><svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
                   <li class="nav-link active"><a href="servicii.html">Servicii</a></li>
                   <li class="nav-link"><a href=#>Echipă</a></li>
                   <li class="nav-link"><a href=#>Blog</a></li>
@@ -36,7 +34,7 @@
                   <li class="nav-link"><a href=#>Contact</a></li>
                 </ul>
             </nav>
-        </header>
+          </header>
 
         <section class="servicii-section">
             <h2 class="servicii-titlu"><span class="text-gradient1">Servicii</span> de curierat complete,<br>adaptate pentru nevoile tale.</h2>
@@ -128,19 +126,18 @@
         </footer>
 
         <script>
+            const sideBar = document.querySelector('.sidebar')
+            const body = document.querySelector('body')
+      
             function showSideBar() {
-              const sideBar = document.querySelector('.sidebar')
-              const body = document.querySelector('body')
               body.style.overflow = 'hidden'
               sideBar.classList.add('open')
             }
       
             function hideSidebar() {
-              const sideBar = document.querySelector('.sidebar')
-              const body = document.querySelector('body')
               body.style.overflow = 'visible'
               sideBar.classList.remove('open')
             }
-        </script>
+          </script>
     </body>
 </html>

@@ -110,6 +110,10 @@ img {
   padding-left: 30px;
 }
 
+.sidebar li svg {
+  cursor: pointer;
+}
+
 .sidebar.open {
   transform: translateX(0);
   opacity: 1;
@@ -122,6 +126,7 @@ img {
 
   .menu-button {
     display: block;
+    cursor: pointer
   }
 }
 
