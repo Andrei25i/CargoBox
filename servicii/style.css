@@ -65,22 +65,8 @@
 }
 
 .buton {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #28A745;
   padding: 10px 30px;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 100px;
   font-size: 20px;
-  font-weight: bold;
-
-  transition: background-color, 0.3s ease-in-out 0s, color, 0.3s ease-in-out 0s
-}
-
-.buton:hover {
-  background-color: #BFC31E;
-  color: #000000;
 }
 
 .grid-item:hover {
@@ -230,7 +216,6 @@
       font-size: 15px;
   }
 }
-
 
 
 /* Pagina de serviciu (nivel 3) */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CargoBox</title>
+    
+    <link rel="stylesheet" href="../general_styles.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="nav-bar">
+      <a href="../index.html"><img class="logo" src="../imagini/Logo.png" alt="Logo"></a>
+      
+      <nav>
+        <ul class="nav-list">
+            <li class="nav-link hideOnMobile"><a href="../servicii/servicii.html">Servicii</a></li>
+            <li class="nav-link hideOnMobile"><a href=#>Echipă</a></li>
+            <li class="nav-link hideOnMobile"><a href=#>Blog</a></li>
+            <li class="nav-link hideOnMobile active"><a href="cariere.html">Cariere</a></li>
+            <li class="nav-link hideOnMobile"><a href="../contact/contact.html">Contact</a></li>
+            <li class="menu-button"><svg onclick=showSideBar() xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+        </ul>
+        <ul class="sidebar">
+          <li><svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+          <li class="nav-link"><a href="../servicii/servicii.html">Servicii</a></li>
+          <li class="nav-link"><a href=#>Echipă</a></li>
+          <li class="nav-link"><a href=#>Blog</a></li>
+          <li class="nav-link active"><a href="cariere.html">Cariere</a></li>
+          <li class="nav-link"><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="text-section">
+      <div class="cariere-heading">
+        <div class="cariere-titlu">
+            <img src="../imagini/Join.svg" alt="Cariere">
+            <h2 class="desktop"><span class="text-gradient1">Alătură-te</span> echipei noastre!</h2>
+            <h2 class="mobile"><span class="text-gradient1">Alătură-te</span><br>echipei noastre!</h2>
+        </div>
+      </div>
+
+      <div class="cariere-text">
+          <p>La CargoBox credem că oamenii sunt cea mai valoroasă resursă. Fie că livrezi colete, organizezi logistica sau sprijini clienții noștri, vei face parte dintr-o echipă dedicată, care pune accent pe excelență și profesionalism.</p>
+          <p>Suntem pasionați de ceea ce facem și ne propunem să aducem un impact pozitiv în fiecare interacțiune cu clienții.</p>
+          <p>Vino și tu să faci parte din echipa noastră!</p>
+      </div>
+    </section>
+
+    <section class="cariere-section">
+      <div class="titlu">
+        <h3>Posturi disponibile</h3>
+        <p>Puteți alege dintr-o varietate de oportunități profesionale, în funcție de diferitele procese ale activității noastre.</p>
+      </div>
+      
+      <div class="cariere-grid-container">
+        <div class="cariere-card">
+          <div class="cariere-card-cerc"> <img src="../imagini/courier.svg" alt="Curier"></div>
+          <div class="cariere-card-content">
+            <span class="cariere-card-title">Curier<br><br></span>
+            <span class="cariere-card-desc">3 posturi disponibile</span>
+            <a class="cariere-card-buton buton" href="#">Detalii</a>
+          </div>
+        </div>
+
+        <div class="cariere-card">
+          <div class="cariere-card-cerc"> <img src="../imagini/call-center-service.svg" alt="Operator asistență clienți"></div>
+          <div class="cariere-card-content">
+            <span class="cariere-card-title">Operator<br>asistență clienți</span>
+            <span class="cariere-card-desc">2 posturi disponibile</span>
+            <a class="cariere-card-buton buton" href="#">Detalii</a>
+          </div>
+        </div>
+
+        <div class="cariere-card">
+          <div class="cariere-card-cerc"> <img src="../imagini/hr.svg" alt="Specialist resurse umane"></div>
+          <div class="cariere-card-content">
+            <span class="cariere-card-title">Specialist<br>resurse umane</span>
+            <span class="cariere-card-desc">1 post disponibil</span>
+            <a class="cariere-card-buton buton" href="#">Detalii</a>
+          </div>
+        </div>
+
+        <div class="cariere-card">
+          <div class="cariere-card-cerc"> <img src="../imagini/marketing.svg" alt="Specialist marketing"></div>
+          <div class="cariere-card-content">
+            <span class="cariere-card-title">Specialist<br>marketing </span>
+            <span class="cariere-card-desc">1 post disponibil</span>
+            <a class="cariere-card-buton buton" href="#">Detalii</a>
+          </div>
+        </div>
+      </div>
+      
+      <p class="cariere-bottom-text text-gradient1">Dezvoltă-ți cariera cu noi!</p>
+    </section>
+   
+  
+    <footer>
+      <span class="copyright-text">© CargoBox 2024 - Toate drepturile rezervate</span>
+
+      <div class="footer-contact">
+        <div class="footer-program">
+          <img src="../imagini/Clock.svg">
+          <span>Luni-Vineri<br>8:00-18:00</span>
+        </div>
+
+        <div class="footer-email">
+          <img src="../imagini/Email Icon.svg">
+          <span>contact@cargobox.com</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const sideBar = document.querySelector('.sidebar')
+      const body = document.querySelector('body')
+
+      function showSideBar() {
+        body.style.overflow = 'hidden'
+        sideBar.classList.add('open')
+      }
+
+      function hideSidebar() {
+        body.style.overflow = 'visible'
+        sideBar.classList.remove('open')
+      }
+    </script>
+  </body>
+</html>
