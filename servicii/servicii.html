@@ -19,7 +19,7 @@
               <nav>
                 <ul class="nav-list">
                     <li class="nav-link hideOnMobile active"><a href="servicii.html">Servicii</a></li>
-                    <li class="nav-link hideOnMobile"><a href=#>Echipă</a></li>
+                    <li class="nav-link hideOnMobile"><a href="../echipa/echipa.html">Echipă</a></li>
                     <li class="nav-link hideOnMobile"><a href="../blog/blog.html">Blog</a></li>
                     <li class="nav-link hideOnMobile"><a href="../cariere/cariere.html">Cariere</a></li>
                     <li class="nav-link hideOnMobile"><a href="../contact/contact.html">Contact</a></li>
@@ -28,7 +28,7 @@
                 <ul class="sidebar">
                   <li><svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
                   <li class="nav-link active"><a href="servicii.html">Servicii</a></li>
-                  <li class="nav-link"><a href=#>Echipă</a></li>
+                  <li class="nav-link"><a href="../echipa/echipa.html">Echipă</a></li>
                   <li class="nav-link"><a href="../blog/blog.html">Blog</a></li>
                   <li class="nav-link"><a href="../cariere/cariere.html">Cariere</a></li>
                   <li class="nav-link"><a href="../contact/contact.html">Contact</a></li>
@@ -125,19 +125,7 @@
             </div>
         </footer>
 
-        <script>
-            const sideBar = document.querySelector('.sidebar')
-            const body = document.querySelector('body')
-      
-            function showSideBar() {
-              body.style.overflow = 'hidden'
-              sideBar.classList.add('open')
-            }
-      
-            function hideSidebar() {
-              body.style.overflow = 'visible'
-              sideBar.classList.remove('open')
-            }
-          </script>
+        <script src="../menu.js"></script>
+
     </body>
 </html>
