@@ -1,0 +1,154 @@
+.echipa-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    align-items: center;
+    margin: 100px 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    
+    width: 700px;
+    
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+  
+    display: flex;
+    justify-content: center; 
+}
+  
+.card-titlu {
+    width: fit-content;
+    height: 80px;
+
+    padding: 20px 40px;
+
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    position: absolute;     
+    transform: translateY(-50%);   
+}
+
+.card-titlu img {
+    width: 57px;
+    height: 57px;
+}
+
+.card-titlu h2 {
+    font-size: 30px;
+}
+  
+.card-content {
+    padding: 30px;
+    margin-top: 5%;
+}
+
+.bottom {
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.card-poza {
+    z-index: -1;
+   
+    border: solid #D9D9D9 7px;
+    border-radius: 30px;
+}
+
+.mobile {
+    display: none;
+}
+
+.right {
+    transform: translateX(-10%);
+    margin-right: -40px;
+}
+
+.left {
+    transform: translateX(10%);  
+    margin-left: -40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .desktop {
+        display: none;
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        width: 490px;
+    }
+
+    .card-titlu {
+        height: 70px;
+    }
+
+    .card-titlu h2 {
+        font-size: 25px;
+    }
+
+    .card-titlu img {
+        width: 47px;
+        height: 47px;
+    }
+
+    .card-content p {
+        font-size: 17px;
+    }
+
+    .card-content {
+        margin-top: 7%;
+    }
+
+    .bottom {
+        margin: 0;
+    }
+
+    .card-poza {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .card {
+        width: 390px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .card {
+        width: 290px;
+        border-radius: 20px;
+    }
+}
