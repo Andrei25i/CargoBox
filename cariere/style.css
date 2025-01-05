@@ -221,7 +221,7 @@
 
     .cariere-bottom-text {
         font-size: 25px;
-      }
+    }
 }
 
 @media only screen and (max-width: 512px) {
@@ -256,4 +256,4 @@
     .cariere-bottom-text {
         font-size: 20px;
     }
-  }
+}

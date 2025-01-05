@@ -88,6 +88,12 @@
     text-align: justify;
 }
 
+.blog-bottom-text {
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+}
+
 @media only screen and (min-width: 2050px) {
     .text-section {
         display: flex;
@@ -210,6 +216,10 @@
         width: 95px;
         height: 15px;
     }
+
+    .blog-bottom-text {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -237,5 +247,11 @@
     .review {
         width: 300px;
         flex-direction: column;
+    }
+
+    @media only screen and (max-width: 386px) {
+        .blog-bottom-text {
+            font-size: 20px;
+        }
     }
 }
