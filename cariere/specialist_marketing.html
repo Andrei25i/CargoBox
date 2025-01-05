@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CargoBox | Specialist marketing</title>
+
+    <link rel="stylesheet" href="../general_styles.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav-bar">
+        <a href="../index.html"><img class="logo" src="../imagini/Logo.png" alt="Logo"></a>
+        
+        <nav>
+          <ul class="nav-list">
+              <li class="nav-link hideOnMobile"><a href="../servicii/servicii.html">Servicii</a></li>
+              <li class="nav-link hideOnMobile"><a href="../echipa/echipa.html">Echipă</a></li>
+              <li class="nav-link hideOnMobile"><a href="../blog/blog.html">Blog</a></li>
+              <li class="nav-link hideOnMobile"><a href="cariere.html">Cariere</a></li>
+              <li class="nav-link hideOnMobile"><a href="../contact/contact.html">Contact</a></li>
+              <li class="menu-button"><svg onclick=showSideBar() xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+          </ul>
+          <ul class="sidebar">
+            <li><svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li class="nav-link"><a href="../servicii/servicii.html">Servicii</a></li>
+            <li class="nav-link"><a href="../echipa/echipa.html">Echipă</a></li>
+            <li class="nav-link"><a href="../blog/blog.html">Blog</a></li>
+            <li class="nav-link"><a href="cariere.html">Cariere</a></li>
+            <li class="nav-link"><a href="../contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <footer>
+        <span class="copyright-text">© CargoBox 2024 - Toate drepturile rezervate</span>
+  
+        <div class="footer-contact">
+          <div class="footer-program">
+            <img src="../imagini/Clock.svg">
+            <span>Luni-Vineri<br>8:00-18:00</span>
+          </div>
+  
+          <div class="footer-email">
+            <img src="../imagini/Email Icon.svg">
+            <span>contact@cargobox.com</span>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="../menu.js"></script>
+      
+</body>
+</html>
