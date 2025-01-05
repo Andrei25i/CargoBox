@@ -41,8 +41,7 @@ img {
   height: 80px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
 
   position: fixed;  
   top: 0;
@@ -168,8 +167,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
 
   font-size: 13px;
 }
