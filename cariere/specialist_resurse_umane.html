@@ -126,7 +126,7 @@
           </div>
         </div>
         
-        <form>
+        <form id="application-form">
           <div class="form-titlu">
             <img src="../imagini/Join.svg" alt="Alătură-te">
             <h3><span class="text-gradient1">Alătură-te</span> echipei noastre!</h3>
@@ -138,30 +138,32 @@
             <div class="form-field">
               <label for="nume">Nume complet</label>
               <input type="text" id="nume" name="nume" placeholder="Scrie numele tau aici...">
+              <span class="error-message" id="nume-error"></span>
             </div>
 
             <div class="form-field">
               <label for="email">Adresă de e-mail</label>
               <input type="text" id="email" name="email" placeholder="Scrie adresa ta aici...">
+              <span class="error-message" id="email-error"></span>
             </div>
 
             <div class="form-field">
-              <label for="cv">Atașează un CV</label>
-              <label for="file-upload" class="file-upload-button">
-                Niciun fișier selectat
-              </label>
-              <input type="file" id="file-upload" name="file-upload" accept=".pdf,.docx">
-              <span class="file-name" id="file-name"></span>
+              <label for="telefon">Număr de telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="Scrie numărul tău aici...">
+              <span class="error-message" id="telefon-error"></span>
             </div>
             
-            <div class="checkbox-wrapper">
-              <input type="checkbox" id="terms" name="terms">
-              <label for="terms">Sunt de acord ca datele mele să fi folosite pentru a putea fi contactat.</label>
+            <div class="form-field">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">Sunt de acord ca datele mele să fi folosite pentru a putea fi contactat.</label>
+              </div>
+              <span class="error-message" id="terms-error"></span>
             </div>
             
             <button class="buton" type="submit">Aplică</button>
           </div>
-        </form>        
+        </form>           
       </div>
 
       <h2 class="cariere-bottom-text text-gradient1">Dezvoltă-ți cariera cu noi!</h2>

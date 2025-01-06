@@ -396,11 +396,12 @@ form {
 
 .form-field label[for="nume"], 
 .form-field label[for="email"],
-.form-field label[for="cv"] {
+.form-field label[for="telefon"] {
     font-size: 20px;
 }
 
-.form-field input[type="text"] {
+.form-field input[type="text"],
+.form-field input[type="tel"] {
     width: 480px;
     height: 40px;
 
@@ -412,43 +413,14 @@ form {
     transition: border-color ease-in-out 0.3s;
 }
 
-.form-field input[type="text"]:focus {
+.form-field input[type="text"]:focus,
+.form-field input[type="tel"]:focus {
     border: solid #000000 1px;
 }
 
-.form-field input[type="text"] {
+.form-field input[type="text"],
+.form-field input[type="tel"] {
     padding: 20px;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.file-upload-button {
-    width: 480px;
-    height: 40px;
-    padding: 20px;
-    border-radius: 10px;
-
-    background-color: #2F2C2C; 
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-
-    display: flex;
-    align-items: center;
-
-    transition: background-color 0.3s ease;
-}
-
-.file-upload-button:hover {
-    background-color: #444;
-}
-
-.file-name {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
 }
 
 .checkbox-wrapper {
@@ -461,12 +433,20 @@ input[type="file"] {
     margin-right: 10px;
     width: 18px;
     height: 18px;
+    cursor: pointer;
 }
 
 .buton {
     padding: 10px 30px;
     font-size: 25px;
     cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
 }
 
 @media only screen and (max-width:1400px) {
@@ -490,7 +470,6 @@ input[type="file"] {
     .titlu-cariera h2 {
         font-size: 35px;
     }
-    
 }
 
 @media only screen and (max-width:700px) {
@@ -547,26 +526,16 @@ input[type="file"] {
     
     .form-field label[for="nume"], 
     .form-field label[for="email"],
-    .form-field label[for="cv"] {
+    .form-field label[for="telefon"] {
         font-size: 15px;
     }
     
-    .form-field input[type="text"] {
+    .form-field input[type="text"],
+    .form-field input[type="tel"] {
         width: 240px;
         height: 30px;
     
         border-radius: 7px;
-    }
-    
-    .file-upload-button {
-        width: 240px;
-        height: 30px;
-        border-radius: 7px;
-        font-size: 13px;
-    }
-    
-    .file-name {
-        font-size: 13px;
     }
     
     .checkbox-wrapper {
